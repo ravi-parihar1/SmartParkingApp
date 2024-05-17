@@ -52,12 +52,7 @@ class LoginPage extends StatelessWidget {
                   Get.offAll(MapPage());
                 },
               ),
-              // SizedBox(height: 20),
-              // MyButton(
-              //   icon: Icons.person_add,
-              //   Btname: "SIGN UP",
-              //   ontap: () {},
-              // ),
+
             ]),
           ),
         ),

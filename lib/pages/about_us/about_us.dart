@@ -38,7 +38,7 @@ class AboutUs extends StatelessWidget {
                   borderRadius: BorderRadius.circular(1000),
                   border: Border.all(
                     width: 5,
-                    color: Colors.orange.shade600,
+                    color: Colors.black,
                   ),
                   image: const DecorationImage(
                     image: AssetImage(profilePath),
@@ -76,73 +76,7 @@ class AboutUs extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              InkWell(
-                onTap: () async {
-                  var url =
-                      Uri.parse("https://github.com/MrNitishroy/Smart_car_parking_IOT");
-                  if (await canLaunchUrl(url)) {
-                    await launchUrl(url);
-                  } else {
-                   
-                    print("Could not launch $url");
-                  }
-                },
-                child: Container(
-                  padding: const EdgeInsets.all(2),
-                  width: 50,
-                  height: 50,
-                  decoration: BoxDecoration(
-                    color: blueColor,
-                    borderRadius: BorderRadius.circular(50),
-                  ),
-                  child: Image.asset(
-                    "assets/icons/youtube.png",
-                    width: 20,
-                    height: 20,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 20),
-              InkWell(
-                onTap: () async {},
-                child: Container(
-                  padding: const EdgeInsets.all(2),
-                  width: 50,
-                  height: 50,
-                  decoration: BoxDecoration(
-                    color: blueColor,
-                    borderRadius: BorderRadius.circular(50),
-                  ),
-                  child: Image.asset(
-                    "assets/icons/linkeding.png",
-                    width: 20,
-                    height: 20,
-                  ),
-                ),
-              ),
-              const SizedBox(width: 20),
-              InkWell(
-                onTap: () async {},
-                child: Container(
-                  padding: const EdgeInsets.all(2),
-                  width: 50,
-                  height: 50,
-                  decoration: BoxDecoration(
-                    color: blueColor,
-                    borderRadius: BorderRadius.circular(50),
-                  ),
-                  child: Image.asset(
-                    "assets/icons/github.png",
-                    width: 20,
-                    height: 20,
-                  ),
-                ),
-              )
-            ],
-          )
+
         ]),
       ),
     );
